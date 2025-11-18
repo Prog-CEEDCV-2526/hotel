@@ -78,7 +78,7 @@ public class hotel {
      * Configura els preus de les habitacions, serveis addicionals i
      * les capacitats inicials en els HashMaps corresponents.
      */
-    static void inicialitzarPreus() {
+    public static void inicialitzarPreus() {
         // Preus habitacions
         preusHabitacions.put(TIPUS_ESTANDARD, 50f);
         preusHabitacions.put(TIPUS_SUITE, 100f);
@@ -296,7 +296,7 @@ public class hotel {
      * Calcula i retorna el cost total de la reserva, incloent l'habitació,
      * els serveis seleccionats i l'IVA.
      */
-    static float calcularPreuTotal(String tipusHabitacio, ArrayList<String> serveisSeleccionats) {
+    public static float calcularPreuTotal(String tipusHabitacio, ArrayList<String> serveisSeleccionats) {
         float subtotal = 0f;
 
         // Preu de l'habitació
@@ -322,7 +322,7 @@ public class hotel {
      * Genera i retorna un codi de reserva únic de tres xifres
      * (entre 100 i 999) que no estiga repetit.
      */
-    static int generarCodiReserva() {
+    public static int generarCodiReserva() {
         int codi;
         do {
             codi = 100 + random.nextInt(900); // 100-999
