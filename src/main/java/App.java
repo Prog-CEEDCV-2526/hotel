@@ -60,11 +60,11 @@ public class App {
 
     // --------- MÈTODES A IMPLEMENTAR ---------
 
-    static void inicialitzarPreus() {
+    public static void inicialitzarPreus() {
         // TODO: Omplir HashMaps amb preus, capacitat i disponibilitat inicial
     }
 
-    static void mostrarMenu() {
+    public static void mostrarMenu() {
         System.out.println("\n===== MENÚ PRINCIPAL =====");
         System.out.println("1. Reservar una habitació");
         System.out.println("2. Alliberar una habitació");
@@ -74,7 +74,7 @@ public class App {
         System.out.println("6. Ixir");
     }
 
-    static void gestionarOpcio(int opcio) {
+    public static void gestionarOpcio(int opcio) {
         switch (opcio) {
             case 1: reservarHabitacio(); break;
             case 2: alliberarHabitacio(); break;
@@ -86,56 +86,56 @@ public class App {
         }
     }
 
-    static void reservarHabitacio() {
+    public static void reservarHabitacio() {
         // TODO: Demanar tipus, serveis, calcular preu, generar codi i guardar reserva
     }
 
-    static String seleccionarTipusHabitacio() {
+    public static String seleccionarTipusHabitacio() {
         // TODO: Preguntar 1-3 i retornar Estàndard, Suite o Deluxe
         return null;
     }
 
-    static String seleccionarTipusHabitacioDisponible() {
+    public static String seleccionarTipusHabitacioDisponible() {
         // TODO: Mostrar disponibilitat i assegurar que hi ha habitacions lliures
         return null;
     }
 
-    static ArrayList<String> seleccionarServeis() {
+    public static ArrayList<String> seleccionarServeis() {
         // TODO: Permetre triar fins a 4 serveis sense repetir
         return new ArrayList<>();
     }
 
-    static float calcularPreuTotal(String tipusHabitacio, ArrayList<String> serveis) {
+    public static float calcularPreuTotal(String tipusHabitacio, ArrayList<String> serveis) {
         // TODO: Sumar habitació + serveis + IVA
         return 0f;
     }
 
-    static int generarCodiReserva() {
+    public static int generarCodiReserva() {
         // TODO: Generar codi 100-999 que NO estiga repetit
         return 0;
     }
 
-    static void alliberarHabitacio() {
+    public static void alliberarHabitacio() {
         // TODO: Demanar codi, tornar habitació i eliminar reserva
     }
 
-    static void consultarDisponibilitat() {
+    public static void consultarDisponibilitat() {
         // TODO: Mostrar lliures i ocupades
     }
 
-    static void llistarReservesPerTipus(int[] codis, String tipus) {
+    public static void llistarReservesPerTipus(int[] codis, String tipus) {
         // TODO: Implementar recursivitat
     }
 
-    static void obtindreReserva() {
+    public static void obtindreReserva() {
         // TODO: Mostrar dades d'una reserva concreta
     }
 
-    static void obtindreReservaPerTipus() {
+    public static void obtindreReservaPerTipus() {
         // TODO: Llistar reserves per tipus
     }
 
-    static void mostrarDadesReserva(int codi) {
+    public static void mostrarDadesReserva(int codi) {
         // TODO: Imprimir tota la informació d'una reserva
     }
 
