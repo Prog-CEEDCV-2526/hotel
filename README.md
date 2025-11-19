@@ -327,10 +327,13 @@ Serveis addicionals (0-4):
 
 Vol afegir un servei? (s/n): s
 Seleccione servei: 1
+
 Servei afegit: Esmorzar
 
 Vol afegir un servei? (s/n): s
+
 Seleccione servei: 4
+
 Servei afegit: Piscina
 
 Vol afegir un servei? (s/n): n
@@ -338,12 +341,17 @@ Vol afegir un servei? (s/n): n
 Calculem el total...
 
 Preu habitació: 100€
+
 Serveis: Esmorzar (10€), Piscina (25€)
+
 Subtotal: 135€
+
 IVA (21%): 28.35€
+
 TOTAL: 163.35€
 
 Reserva creada amb èxit!
+
 Codi de reserva: 482
 
 (menú)
@@ -354,7 +362,9 @@ Codi de reserva: 482
 Introdueix el codi de reserva: 482
 
 Reserva trobada!
+
 Habitació alliberada correctament.
+
 Disponibilitat actualitzada.
 
 (menú)
@@ -413,4 +423,5 @@ Codi: 482
 
 ## 🟥 6. Exemple d’Opció 6 – Ixir
 Eixint del sistema...
+
 Gràcies per utilitzar el gestor de reserves!
