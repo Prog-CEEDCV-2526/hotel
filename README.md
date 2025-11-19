@@ -11,22 +11,6 @@ Implementar un sistema en **Java** que permeta gestionar les reserves d'un hotel
 
 ---
 
-## 🛠️ Funcionalitats Principals
-1. **Tipus d'habitació disponibles**:
-   - Estàndard (30 disponibles) – 50€
-   - Suite (20 disponibles) – 100€
-   - Deluxe (10 disponibles) – 150€
-
-2. **Serveis addicionals**:
-   - Esmorzar – 10€
-   - Gimnàs – 15€
-   - Spa – 20€
-   - Piscina – 25€
-
-3. **IVA aplicat**: 21%
-
----
-
 ## 📂 Estructura del projecte
 
 ------------------------------------
