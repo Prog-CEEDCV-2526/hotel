@@ -23,7 +23,7 @@ jobs:
         with:
           test-name: JUnit Tests
           id: junit-tests
-          command: mkdir -p out && javac -encoding UTF-8 -cp lib/junit-platform-console-standalone.jar -d out src/main/java/App.java src/test/java/AppTest.java && java -jar lib/junit-platform-console-standalone.jar --class-path out --scan-class-path
+          command: mkdir -p out && javac -encoding UTF-8 -cp 'lib/*' -d out src/main/java/App.java src/test/java/AppTest.java && java -jar lib/junit-platform-console-standalone-1.10.1.jar --class-path out --scan-class-path
           input: ""
           expected-output: "failures: 0"
           comparison-method: "contains"
