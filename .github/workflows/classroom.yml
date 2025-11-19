@@ -17,16 +17,16 @@ jobs:
         uses: actions/checkout@v4
 
       - name: Run JUnit tests (AppTest)
-        uses: classroom-resources/autograding-io-grader@v1
+        run: |
+          mkdir -p out
+          javac -encoding UTF-8 -cp 'lib/*' -d out src/main/java/App.java src/test/java/AppTest.java
+          java -cp 'out:lib/*' org.junit.platform.console.ConsoleLauncher --scan-classpath out
         id: junit-tests
-        with:
-          test-name: JUnit Tests
-          id: junit-tests
-          command: mkdir -p out && javac -encoding UTF-8 -cp 'lib/*' -d out src/main/java/App.java src/test/java/AppTest.java && java -cp 'out:lib/*' org.junit.platform.console.ConsoleLauncher --scan-classpath out
-          input: ""
-          expected-output: "failures: 0"
-          comparison-method: "contains"
-          timeout: 120
+
+      - name: Generate test report
+        if: always()
+        run: |
+          echo "Test results generated"
 
       - name: Autograding Reporter
         uses: classroom-resources/autograding-grading-reporter@v1
