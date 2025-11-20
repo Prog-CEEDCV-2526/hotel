@@ -425,3 +425,10 @@ Codi: 482
 Eixint del sistema...
 
 Gràcies per utilitzar el gestor de reserves!
+
+
+## Programació sobre el fitxer **app.java**
+
+> **📌 Important:** En el fitxer `app.java` ubicat en `src/main/java/com/hotel/`, cal modificar **tots els punts on aparega la paraula TODO**. Cada TODO indica una part del codi que l'estudiant ha d'implementar segons les especificacions descrites en aquest document. No s'ha d'afegir cap mètode nou ni eliminar-ne cap; únicament completar els espais senyalats.
+
+---
