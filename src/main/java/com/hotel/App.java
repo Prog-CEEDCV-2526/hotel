@@ -110,7 +110,7 @@ public class App {
      * Processa l'opció seleccionada per l'usuari i crida el mètode corresponent.
      */
     public static void gestionarOpcio(int opcio) {
-       
+       //TODO:
     }
 
     /**
@@ -119,7 +119,7 @@ public class App {
      */
     public static void reservarHabitacio() {
         System.out.println("\n===== RESERVAR HABITACIÓ =====");
-
+        //TODO:
         
     }
 
@@ -128,6 +128,7 @@ public class App {
      * retorna el nom del tipus.
      */
     public static String seleccionarTipusHabitacio() {
+        //TODO:
         return null;
     }
 
@@ -138,7 +139,7 @@ public class App {
      */
     public static String seleccionarTipusHabitacioDisponible() {
         System.out.println("\nTipus d'habitació disponibles:");
-
+        //TODO:
         return null;
     }
 
@@ -147,7 +148,7 @@ public class App {
      * els retorna en un ArrayList de String.
      */
     public static ArrayList<String> seleccionarServeis() {
-        
+        //TODO:
 
         return null;
     }
@@ -157,6 +158,7 @@ public class App {
      * els serveis seleccionats i l'IVA.
      */
     public static float calcularPreuTotal(String tipusHabitacio, ArrayList<String> serveisSeleccionats) {
+        //TODO:
         return 0;
     }
 
@@ -165,6 +167,7 @@ public class App {
      * (entre 100 i 999) que no estiga repetit.
      */
     public static int generarCodiReserva() {
+        //TODO:
         return 0;
     }
 
