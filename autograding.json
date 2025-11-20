@@ -1,0 +1,14 @@
+{
+  "tests": [
+    {
+      "name": "JUnit tests",
+      "setup": "",
+      "run": "mvn -q -DskipTests=false test",
+      "input": "",
+      "timeout": 200000,
+      "max_score": 10
+    }
+  ]
+}
+
+
