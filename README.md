@@ -427,8 +427,39 @@ Eixint del sistema...
 Gràcies per utilitzar el gestor de reserves!
 
 
+
+---
+# Avaluació
+
+Este projecte inclou **tests automàtics** que s’executaran en GitHub Classroom per a avaluar la teua solució.
+
 ## Programació sobre el fitxer **app.java**
 
 > **📌 Important:** En el fitxer `app.java` ubicat en `src/main/java/com/hotel/`, cal modificar **tots els punts on aparega la paraula TODO**. Cada TODO indica una part del codi que l'estudiant ha d'implementar segons les especificacions descrites en aquest document. No s'ha d'afegir cap mètode nou ni eliminar-ne cap; únicament completar els espais senyalats.
 
----
+
+## ✅ Com funciona l’avaluació automàtica?
+- Els tests comproven diferents funcionalitats del sistema (menú, reserves, càlcul de preus, etc.).
+- Cada test té una puntuació assignada. Si passa, sumes eixos punts.
+
+## 🔍 Com veure els resultats?
+1. Ves al teu repositori en GitHub.
+2. Fes clic en la pestanya **Actions**.
+3. Busca el workflow anomenat **Autograding**.
+4. Fes clic en l’última execució per a veure quins tests han passat i quins han fallat.
+
+## ⚠️ Si falla un test:
+- Llig el missatge d’error en el log de GitHub Actions.
+- Corregeix el teu codi i torna a fer **commit + push**.
+- El sistema tornarà a executar els tests automàticament.
+
+## 🧪 Tests inclosos:
+- Menú principal i opcions.
+- Inicialització de preus i disponibilitat.
+- Reserves i alliberament d’habitacions.
+- Càlcul de preus amb IVA.
+- Consultes i llistats de reserves.
+
+**Sort i revisa sempre els resultats en GitHub Actions!**
+
+

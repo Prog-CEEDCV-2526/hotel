@@ -1,0 +1,70 @@
+name: Autograding
+on:
+  push:
+    branches: [ main ]
+jobs:
+  autograding:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+     temurin'      - name: Set up JDK
+      - name: Build with Maven
+        run: mvn -B package --file pom.xml
+
+    outputs:
+      tests:
+        # 1-10
+        - name: "Test Main Bucle Ixir"
+          run: mvn -Dtest=AppTest#testMainBucleIxit test
+          points: 1
+        - name: "Inicialitzar Preus"
+          run: mvn -Dtest=AppTest#testInicialitzarPreus test
+          points: 2
+        - name: "Mostrar Menú"
+          run: mvn -Dtest=AppTest#testMostrarMenu test
+          points: 1
+        - name: "Gestionar Opció Invàlida"
+          run: mvn -Dtest=AppTest#testGestionarOpcioInvalida test
+          points: 1
+        - name: "Reservar Habitació"
+          run: mvn -Dtest=AppTest#testReservarHabitacioCreaReservaIDisminueixDisponibilitat test
+          points: 3
+        - name: "Seleccionar Tipus Habitació Suite"
+          run: mvn -Dtest=AppTest#testSeleccionarTipusHabitacioSuite test
+          points: 1
+        - name: "Seleccionar Tipus Habitació Disponible"
+          run: mvn -Dtest=AppTest#testSeleccionarTipusHabitacioDisponibleAmbDisponibilitat test
+          points: 1
+        - name: "Seleccionar Tipus Habitació Sense Disponibilitat"
+          run: mvn -Dtest=AppTest#testSeleccionarTipusHabitacioDisponibleSenseDisponibilitat test
+          points: 1
+        - name: "Seleccionar Serveis Sense Cap Servei"
+          run: mvn -Dtest=AppTest#testSeleccionarServeisSenseCapServei test
+          points: 2
+        - name: "Calcular Preu Total Habitació + Servei"
+          run: mvn -Dtest=AppTest#testCalcularPreuTotalHabitacioMesServei test
+          points: 2
+        - name: "Generar Codi Reserva Rang i Únic"
+          run: mvn -Dtest=AppTest#testGenerarCodiReservaRangIUnic test
+          points: 3
+        - name: "Alliberar Habitació"
+          run: mvn -Dtest=AppTest#testAlliberarHabitacioIncrementaDisponibilitatIEliminaReserva test
+          points: 3
+        - name: "Consultar Disponibilitat"
+          run: mvn -Dtest=AppTest#testConsultarDisponibilitatMostraTaula test
+          points: 1
+        - name: "Llistar Reserves Per Tipus"
+          run: mvn -Dtest=AppTest#testLlistarReservesPerTipusFiltraCorrectament test
+          points: 2
+        - name: "Obtindre Reserva"
+          run: mvn -Dtest=AppTest#testObtindreReservaMostraReserva test
+          points: 2
+        - name: "Obtindre Reserva Per Tipus"
+          run: mvn -Dtest=AppTest#testObtindreReservaPerTipusMostraNomésEixeTipus test
+          points: 2
+        - name: "Mostrar Dades Reserva"
+          run: mvn -Dtest=AppTest#testMostrarDadesReserva test
+          points: 2
+        uses: actions/setup-java@v3
+        with:
+          java-version: '17'
