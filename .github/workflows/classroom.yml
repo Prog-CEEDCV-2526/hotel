@@ -22,6 +22,7 @@ jobs:
 
     - name: Nota
       run: |
+        echo "Estoy escribiendo desde el proyecto git"
         # Extraer totales desde Surefire
         total=$(grep -h "Tests run:" target/surefire-reports/*.txt | awk '{print $3}' | cut -d',' -f1 | paste -sd+ - | bc)
         failures=$(grep -h "Failures:" target/surefire-reports/*.txt | awk '{print $5}' | cut -d',' -f1 | paste -sd+ - | bc)
