@@ -17,11 +17,12 @@ jobs:
         java-version: '17'
         distribution: 'temurin'
 
-    - name: Run Maven tests
-      run: mvn -B test --file pom.xml
-
     - name: Nota
       if: always()
       run: |
         echo "Estoy escribiendo desde el proyecto git"
+
+    - name: Run Maven tests
+      run: mvn -B test --file pom.xml
+
         
