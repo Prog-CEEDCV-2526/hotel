@@ -7,22 +7,20 @@ on:
 jobs:
   build:
     runs-on: ubuntu-latest
-
     steps:
-    - uses: actions/checkout@v3
+      - name: Echo de prueba
+        run: |
+          echo "Esto-y hasta los huevos"
+   # steps:
+   # - uses: actions/checkout@v3
 
-    - name: Set up JDK 17
-      uses: actions/setup-java@v3
-      with:
-        java-version: '17'
-        distribution: 'temurin'
+   # - name: Set up JDK 17
+   #   uses: actions/setup-java@v3
+   #   with:
+   #     java-version: '17'
+   #     distribution: 'temurin'
 
-    - name: Nota
-      if: always()
-      run: |
-        echo "Estoy escribiendo desde el proyecto git"
-
-    - name: Run Maven tests
-      run: mvn -B test --file pom.xml
+   # - name: Run Maven tests
+   #   run: mvn -B test --file pom.xml
 
         
