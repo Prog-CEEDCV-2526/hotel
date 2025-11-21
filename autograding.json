@@ -1,14 +1,14 @@
 {
   "tests": [
     {
-      "name": "JUnit tests",
+      "name": "Puntuación JUnit",
       "setup": "",
-      "run": "mvn -q -DskipTests=false test",
+      "run": "cat grading_results.txt | grep GRADE | cut -d'=' -f2",
       "input": "",
+      "expected_output": "",
+      "comparison": "numeric",
       "timeout": 200000,
       "max_score": 10
     }
   ]
 }
-
-
